@@ -41,14 +41,7 @@ export class MyOctocats extends React.Component {
       return (
         <section>
           {myOctocats.map(cat => {
-            return (
-              <Octocat
-                name={cat.name}
-                id={cat.number}
-                image={cat.image}
-                authimage={cat.authors[0].image}
-              />
-            )
+            return <Octocat cat={cat} />
           })}
         </section>
       )
